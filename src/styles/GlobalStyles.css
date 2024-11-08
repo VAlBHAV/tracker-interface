@@ -1,0 +1,132 @@
+/* src/styles/GlobalStyles.css */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f2f5;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+  
+  .container {
+    max-width: 1200px;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  
+  h1, h2 {
+    text-align: center;
+  }
+  
+  form, .task-list {
+    margin: 20px 0;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  input, select, button {
+    padding: 10px;
+    font-size: 1rem;
+    margin: 5px 0;
+    width: 100%;
+    max-width: 400px;
+    box-sizing: border-box;
+  }
+  
+  button {
+    background-color: #0070f3;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  
+  /* Task List Styling */
+  .task-list ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .task-card {
+    border-radius: 8px;
+    padding: 15px;
+    margin: 10px 0;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+  
+  /* Priority Colors */
+  .high-priority {
+    background-color: #ff4d4f;
+    color: white;
+  }
+  
+  .medium-priority {
+    background-color: #ffa500;
+    color: white;
+  }
+  
+  .low-priority {
+    background-color: #ffff99;
+    color: black;
+  }
+  
+  .task-card h3 {
+    margin: 0;
+    font-size: 1.2rem;
+  }
+  
+  .task-card p {
+    margin: 5px 0;
+  }
+  
+  .task-card button {
+    padding: 5px 10px;
+    font-size: 0.9rem;
+    background-color: #333;
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 4px;
+    align-self: flex-start;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .container {
+      padding: 10px;
+    }
+  
+    form {
+      max-width: 100%;
+    }
+  
+    h1, h2 {
+      font-size: 1.5rem;
+    }
+  
+    button {
+      font-size: 0.9rem;
+      padding: 8px;
+    }
+  
+    .task-card h3 {
+      font-size: 1rem;
+    }
+  
+    .task-card p {
+      font-size: 0.9rem;
+    }
+  }
+  
